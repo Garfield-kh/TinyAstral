@@ -1,0 +1,5 @@
+{
+ "task": "lift_pot",
+ "text": "- Locate kitchenpot; record start x,y and orientation; final must keep them unchanged.\n- Grasp left/right handles in one bimanual call. If either grasp fails, do not lift; re-locate and re-grasp only failed side without dragging.\n- After both grasps OK, lift both height_cm 12. If lift says already at/above 12 but pot bottom is still below 10, use tiny bimanual dz +2/+3; avoid height 18 or large dz.\n- Verify holding left/right and height kitchenpot 10; success needs bottom just above 10 cm (e.g. 10.3), not exact 10-13.\n- Before done, verify all_pass and visually/locate confirm pot remains at start x,y with no shift/rotation.",
+ "goal": "Both arms hold the gray kitchenpot by its handles, pot bottom just above 10 cm, and pot remains at its start x,y without shifting or rotating."
+}

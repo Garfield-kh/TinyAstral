@@ -1,0 +1,5 @@
+{
+ "task": "blocks_ranking_rgb",
+ "text": "- Success requires all three blocks on_table, both arms released, x order red<green<blue, and row y: all y within ~2 cm of each other (target y=-15).\n- Place red near [-8,-15], green [0,-15], blue [8,-15]; after each place check measured center, not just OK.\n- Use the instructed arm if given, otherwise either arm; top-down body-center grasps work. If grasp NOT_SEEN, home the arm and retry/locate.\n- If a place is OFF_TARGET, re-grasp with the arm that can see the block (often right for blue) and place again; verify x order and y spread before done.\n- Do not accept blue y more than ~2 cm from red/green; for right-arm blue aim y=-14 and re-place if needed.",
+ "goal": "Red, green, blue on table, both arms released, left-to-right red-green-blue, all y within about 2 cm."
+}

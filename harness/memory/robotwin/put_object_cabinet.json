@@ -1,0 +1,5 @@
+{
+ "task": "put_object_cabinet",
+ "text": "- End state (expert demos): the lowest drawer of the cabinet pulled straight out toward the robot (about 15 cm), the object inside that drawer resting on its bottom, released.\n- The arm on the object's side handles the object; the other arm opens the drawer. First grasp the object and lift it a little (lift 12) and keep holding it.\n- Open the drawer with articulate(arm=<the other arm>, object=cabinet, motion=\"pull\", degrees=15) (a straight slide, not a door swing). The result gives drawer_inside_xy_cm.\n- Then place(arm=<object arm>, object=<object>, ref=\"table\", xy=drawer_inside_xy_cm): it is lowered into the open drawer and released. If UNREACHABLE, move the object a little toward the drawer first and retry.\n- Before done check the images: drawer open, object inside it, gripper open.",
+ "goal": "The cabinet's lowest drawer pulled out toward the robot, the object inside it, released."
+}

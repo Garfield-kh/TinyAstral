@@ -1,0 +1,5 @@
+{
+ "task": "place_bread_basket",
+ "text": "- End state: every target bread is released inside the basket; orientation/height not important, but it must not be resting on the rim or outside.\n- Locate basket/breads first; if not visible, use visual descriptions. Reject implausible basket sizes; re-locate before grasping.\n- Grasp bread body centre top-down; use either arm, bimanual for two. If lift_test says object not visible, verify held object before placing. Place with ref=breadbasket relation=in, no xy unless default fails and xy is clearly inside.\n- After each place, home the arm and verify inside. If OFF_TARGET, RELEASED_NOT_SEEN, cannot see basket, visibly on rim, bottom_z > basket top_z, or missing, locate with descriptions, re-grasp/place; never use arbitrary table xy.\n- Before done, verify all target breads in basket and used arms released; if all objects vanish after reset, give up. Keep basket unmoved.",
+ "goal": "All target breads are released inside the basket, not on rim/outside; used arms released; basket unmoved."
+}

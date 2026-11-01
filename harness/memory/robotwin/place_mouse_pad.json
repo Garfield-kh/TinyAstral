@@ -1,0 +1,5 @@
+{
+ "task": "place_mouse_pad",
+ "text": "- Use instructed arm for final grasp/place; if none, arm on mat side. If UNREACHABLE, retry with xy on reachable mat area, not handover.\n- Locate actual colored mat, not table; if invisible or huge flat object, search with color+shape descriptions and visually confirm.\n- Grasp top-down at body centre; place ref=mat relation=\"on\". Add xy=mat centre for small mats/OFF_TARGET, aiming flat/centred.\n- Verify images+predicates: mouse visibly on named mat, released, not tilted/elevated (bottom_z near mat top). If RELEASED_NOT_SEEN, locate/inspect and re-place if needed.\n- \"on\" is not enough: the mouse must sit at the mat centre. If placed_offset shows it off-centre, re-place it toward the mat centre before done.",
+ "goal": "Mouse rests visibly at the centre of the named colored mat, released by instructed arm (or either if none), flat and not elevated."
+}

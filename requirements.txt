@@ -1,0 +1,9 @@
+# Python packages used by the harness H* itself (harness/, eval/). Install them into each benchmark's conda environment
+# on top of the upstream benchmark's own requirements (see docs/benchmarks/<bench>.md).
+# Pinned to the versions of the paper runs where it matters.
+numpy<2              # 1.26.4 in all paper environments
+scipy                # cKDTree (RoboTwin harness); 1.15.3 (RoboTwin, LIBERO-PRO), 1.17.1 (Guava)
+pillow
+transforms3d==0.4.2
+requests             # SAM3 client (LIBERO-PRO, Guava)
+pyyaml               # Guava task configs

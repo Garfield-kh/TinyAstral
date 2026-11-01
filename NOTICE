@@ -1,0 +1,59 @@
+TinyAstral
+Copyright 2026 Kehong Gong and the TinyAstral authors
+
+The code in this repository is licensed under the Apache License, Version 2.0
+(see LICENSE).
+
+The TinyAstral student weights and the TinyAstral-SFT dataset are NOT part of this
+repository. They are distributed separately under the Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0).
+The dataset contains samples derived from DROID, RT-1 (Fractal), Bridge V2 and
+Berkeley UR5 (CC BY 4.0), AgiBot World (CC BY-NC-SA 4.0) and RH20T (CC BY-SA 4.0 /
+CC BY-NC 4.0 subsets), plus simulator renderings from RoboTwin, Guava and
+LIBERO-PRO; the weights are trained on it and carry the same terms.
+
+-------------------------------------------------------------------------------
+Third-party components
+-------------------------------------------------------------------------------
+None of the components below is redistributed in this repository unless stated
+otherwise. Users obtain them from their upstream sources and are bound by their
+respective licenses. Code in this repository that interfaces with them (adapters,
+drivers, launch scripts) is original work under Apache-2.0.
+
+Models
+  * Qwen3.5-0.8B / Qwen3.5-2B / Qwen3.5-4B (Qwen team, Alibaba Cloud)
+      Apache License 2.0. Base models of the TinyAstral students; the released
+      student weights are fine-tuned derivatives distributed under CC BY-NC-SA 4.0
+      because of their training data (see above).
+  * Teacher model (optional; only needed to generate new training data or to run the
+      teacher harness). The paper's teacher is Qwen3.8-Flash-Next, used under its
+      license; teacher outputs in the SFT data are subject to that license.
+      Teacher weights are NOT redistributed. Any OpenAI-compatible endpoint can be
+      used instead.
+  * SAM 3 (Meta Platforms, Inc.), https://github.com/facebookresearch/sam3
+      SAM License (custom license; weights gated on Hugging Face, facebook/sam3).
+      Neither the SAM 3 code nor its weights are redistributed. perception/ contains
+      a small HTTP wrapper that imports the user-installed `sam3` package.
+
+Benchmarks / simulators (used through adapters; not redistributed)
+  * RoboTwin, https://github.com/RoboTwin-Platform/RoboTwin            MIT License
+  * RoboDawn (includes a RoboTwin copy), https://github.com/Hugo-AGI/RoboDawn
+                                                                        MIT License
+  * LIBERO, https://github.com/Lifelong-Robot-Learning/LIBERO           MIT License
+  * SimplerEnv, https://github.com/simpler-env/SimplerEnv               MIT License
+  * VLABench, https://github.com/OpenMOSS/VLABench                      MIT License
+  * Guava, https://github.com/hdacnw/guava-release
+      No license file in the upstream repository (checked 2026-10-30).
+      TODO: verify upstream license before publication.
+  * MotorMind (LIBERO-PRO suite index and perturbations),
+      https://github.com/Motor-Mind/MotorMind-Code
+      No license file in the upstream repository (checked 2026-10-30).
+      TODO: verify upstream license before publication.
+  * EmbodiedBench (EB-Manipulation), https://github.com/EmbodiedBench/EmbodiedBench
+      No license file in the upstream repository (checked 2026-10-30).
+      TODO: verify upstream license before publication.
+
+Not included
+  * Ultralytics YOLO weights/code (AGPL-3.0) are NOT included and are not used by
+    the TinyAstral harness.
+  * GraspGen (shipped as a Guava third-party component) is NOT used or included.

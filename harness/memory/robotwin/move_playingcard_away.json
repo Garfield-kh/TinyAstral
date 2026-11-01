@@ -1,0 +1,5 @@
+{
+ "task": "move_playingcard_away",
+ "text": "- Use the arm named in the instruction; if none is named, use the arm on the side where the card case starts (expert demos do). Locate playingcards; if not visible, locate with the instruction's visual description (e.g., black/red box with gold text).\n- Grasp body center top-down. If SLIPPED/UNREACHABLE, home, re-locate, retry the same arm at body center or a reachable end; avoid switching arms unless the instruction explicitly names it.\n- Place on the table far out on the side it started on (about 30 cm further outward along x, away from the middle), keeping y near that start.\n- If place says RELEASED_NOT_SEEN, locate again; if visible on the table, do not re-grasp or adjust.\n- Before done, verify on_table and released (gripper open) via checks/images; do not require upright, exact flatness, exact 30 cm, or unchanged orientation.",
+ "goal": "playingcards case rests on the table far out on the side it started on (moved outward along x, away from the middle), both grippers open."
+}

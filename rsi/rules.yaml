@@ -1,0 +1,60 @@
+# Pre-registered rules for one RSI run.  Humans fix this file BEFORE the loop starts; its SHA-256 is written into every
+# ledger record, so a run under an edited file is visible.  Paths are relative to this file.
+
+teacher:                              # frozen teacher pi_T: weights and decoding never change during the loop
+  model: Qwen3.8-Flash-Next           # open-weight teacher used in the paper (any OpenAI-compatible model works)
+  base_url: http://localhost:8000/v1  # vLLM / SGLang endpoint serving the teacher
+  temperature: 0
+  api_key_env: TEACHER_API_KEY
+
+proposer:                             # the master: reads trajectories and proposes harness edits
+  kind: manual                        # manual (human or CLI agents) | llm | module:Class
+  # kind: llm
+  # base_url: <OpenAI-compatible endpoint of your master model>
+  # model: <master model name>
+  # api_key_env: MASTER_API_KEY
+
+tasks: [task_a, task_b, task_c]       # every task the loop may use
+heldout_tasks: []                     # never used inside the loop; added to the final evaluation only
+
+seeds:                                # half-open ranges, must be disjoint (the paper's ranges)
+  train: [20000, 50000]               # data collection after the loop (Stage 2); never used by the loop
+  dev: [50000, 60000]                 # failure mining (read trajectories)
+  selection: [60000, 100000]          # direction screens and paired acceptance tests, a fresh block per test
+  eval: [100000, 110000]              # final report only; the loop refuses these seeds
+
+harness: harness_v0                   # directory of the starting harness H0
+workdir: rsi_work                     # versions/, candidates/, rounds/, ledger.jsonl, state.json
+frozen_paths: []                      # harness files that must stay byte-identical, e.g. [prompts/system.txt, tools/descriptions.json]
+memory_dir: ""                        # task memory as <memory_dir>/<task>.md; only the target tasks' notes may change
+
+runner:                               # how to run one episode (see rsi/evaluate.py)
+  command: "python run_episode.py --harness {harness} --task {task} --seed {seed} --out {out}"
+  timeout_s: 900                      # wall-clock limit; a timeout counts as a failure
+  max_calls: 30                       # per-episode tool-call budget, the same for both arms
+
+audit_command: ""                     # independent audit, e.g. "python audit.py {parent} {cand}"; non-zero = inadmissible
+
+dev:
+  pairs_per_task: 5
+  max_failures_shown: 30
+
+selection:
+  pairs_per_task: 24                  # pairs per acceptance test, fixed in advance (24 x 50 tasks ~ 1,200 pairs)
+
+budget:
+  max_rounds: 8
+  max_candidates_per_round: 3
+  max_episodes: 60000
+  workers: 32
+
+gate:
+  alpha: 0.025                        # one-sided 97.5% lower bound on J must be > 0; two-sided 95% bounds elsewhere
+  bootstrap_reps: 20000
+  bootstrap_seed: 7
+  veto_untriggered_pp: -2.0           # veto if U regresses this much with a two-sided 95% upper bound below 0
+  interim_fraction: 0.5               # futility check after this fraction of the planned pairs
+  interim_planned_gain_pp: 3.0        # gain assumed for the remaining pairs when computing conditional power
+  interim_min_power: 0.10
+  screen_pairs_per_task: 4            # direction screen per component (0 disables it)
+  screen_min_upper_pp: 2.0            # drop if the target-cluster upper bound is below this

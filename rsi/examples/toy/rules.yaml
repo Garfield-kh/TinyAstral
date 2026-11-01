@@ -1,0 +1,28 @@
+# Toy rules: same schema as ../../rules.yaml, mock teacher, scripted master.
+teacher:
+  model: mock                       # stand-in for the frozen teacher; see ../../rules.yaml for a real endpoint
+tasks: [put_bottle_on_bin, put_can_on_plate, put_cup_on_tray, put_vase_on_shelf, put_block_on_box, put_mug_on_tray, put_thermos_on_bag, put_apple_on_bowl, put_lamp_on_desk, put_cube_on_pad]
+seeds:
+  dev: [1000, 2000]
+  selection: [2000, 10000]
+  eval: [100000, 101000]
+harness: harness
+workdir: _work
+runner:
+  callable: "bench:run_episode"
+  max_calls: 6
+proposer:
+  kind: "scripted_proposer:ScriptedProposer"
+dev:
+  pairs_per_task: 10
+  max_failures_shown: 200
+selection:
+  pairs_per_task: 40
+budget:
+  max_rounds: 3
+  max_candidates_per_round: 3
+  max_episodes: 20000
+  workers: 4
+gate:
+  bootstrap_reps: 2000
+  screen_pairs_per_task: 10

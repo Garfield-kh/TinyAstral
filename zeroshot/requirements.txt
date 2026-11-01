@@ -1,0 +1,8 @@
+# Python packages used by the zero-shot drivers/adapters on top of each upstream benchmark environment
+# (install into the SimplerEnv / VLABench / EB-Manipulation conda env; the H* requirements apply as well).
+# Versions = the paper environments.
+numpy<2            # 1.26.4 (SimplerEnv, EB), 1.25.0 (VLABench)
+scipy              # 1.15.3 / 1.14.0 / 1.13.1
+pillow
+transforms3d==0.4.2
+requests           # EB adapter -> Guava SAM3 server

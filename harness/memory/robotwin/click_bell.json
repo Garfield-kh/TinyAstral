@@ -1,0 +1,5 @@
+{
+ "task": "click_bell",
+ "text": "- Use named arm; if none, right. Always pass arm, object, and direction: press {\"arm\":\"left\",\"object\":\"bell\",\"direction\":\"down\"}.\n- Press the specified bell's top once. If NOT_REACHED, move same arm down dz=-6 and press again; if no named arm and UNREACHABLE, try other arm once.\n- After OK, verify from images/result that the specified bell's top is depressed and reach_past_surface_cm <= 0. If positive, move down dz=-2 and press; if wrong bell, press the specified bell (use its name if needed).\n- Home used arm. Do not lift, drag, or reposition bell; small shifts OK.\n- Before done, verify on_table bell and released used arm (and other arm if used). Do not require upright, exact coordinates, orientation, or size.",
+ "goal": "Specified bell remains on table, top center pressed; used arm homed/released."
+}

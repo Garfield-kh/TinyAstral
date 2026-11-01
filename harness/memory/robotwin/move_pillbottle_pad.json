@@ -1,0 +1,5 @@
+{
+ "task": "move_pillbottle_pad",
+ "text": "- Locate pillbottle and blue_pad first; if either is not visible or positions are inconsistent, home and re-locate with descriptions before grasping.\n- Use the named arm; if unspecified, either arm. Grasp the bottle body centre; if EMPTY_GRASP/UNREACHABLE, re-locate and retry, not the same failed grasp.\n- Place with ref blue_pad, relation \"on\". Avoid align=true or explicit xy if they cause PLAN_FAIL/OFF_TARGET; after OFF_TARGET or a fall, home, re-locate, re-grasp, and place again.\n- A bottle lying on its side does not count even on the pad, and place does not stand a lying bottle back up; grasp gently so it is not knocked over, and do not use \"against\" unless instructed.\n- Before done, verify on, upright, released, and centred via locate/placed_offset; bottom_z near pad top and centre height consistent with an upright bottle.",
+ "goal": "Pillbottle upright, centred on blue_pad, released, bottom near pad top, centre height consistent with bottle height."
+}

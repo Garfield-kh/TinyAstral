@@ -1,0 +1,5 @@
+{
+ "task": "pick_diverse_bottles",
+ "text": "- Locate both first; confirm brown glossy swirls and medium orange/yellow-label bottle. Re-locate after failed grasp/visible:false; stale IDs/poses cause wrong carries.\n- If EMPTY_GRASP/UNREACHABLE/SLIPPED, home arm, re-locate, try other arm or different part once; avoid tilted body-centre grasp with zero opening and repeated same approach.\n- Right-arm carry to ref table xy=[6,-8] with height_cm 14 worked; do not carry one bottle alone before the other is held, or it may drift far back-right.\n- If far back/right and grasp/push fail, home both, re-locate broadly, try opposite arm/near end; avoid repeated right-arm pushes.\n- Before done, verify both arms holding, both bottles visible at target positions/height, not released.\n- Once both bottles are held (one per arm), raise them together with bimanual([present(left, xy=[-6, -10], height_cm=15), present(right, xy=[6, -10], height_cm=15)]); keep holding both.",
+ "goal": "Both bottles held, not released; left/right arms hold left/right bottles at table-center ±6 cm, same row 10 cm toward robot, 12 cm apart, bottoms 14-16 cm high, roughly upright."
+}

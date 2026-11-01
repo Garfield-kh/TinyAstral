@@ -1,0 +1,5 @@
+{
+ "task": "place_can_basket",
+ "text": "- Grasp the can with the named arm. If `place ... relation:\"in\"` is UNREACHABLE, handover to the other arm, then place; if still UNREACHABLE, move the holding arm closer to the basket and retry.\n- Do not lift or push the basket before the can is placed. If the can becomes unseen, locate it with a visual description; do not chase objects.\n- After placing, home/release placing arm. Grasp basket handle with free arm; prefer top-down. If side/body grasp slips or PLAN_FAIL, home and retry top-down.\n- Lift only enough to pass the height check (`move dz 5-6` or `lift height_cm 20-22`) and keep holding.\n- Before done, verify `holding <arm> basket` and `height basket 4`; do not require can visible/upright/specific height, and omit `in can basket` only if occluded after a successful place.",
+ "goal": "Can in basket; free arm holds basket handle, basket lifted at least 4 cm."
+}

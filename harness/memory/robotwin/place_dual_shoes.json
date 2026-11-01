@@ -1,0 +1,5 @@
+{
+ "task": "place_dual_shoes",
+ "text": "- Locate both shoes and the shoe box. The shoe that starts on the left side of the table goes into the half of the box nearer the robot (smaller y than the box centre); the shoe that starts on the right goes into the far half (larger y than the box centre) (as in the expert demos).\n- Grasp each shoe body centre across its narrow side, top-down, with the arm on its side. Put each in with place(ref=shoe box, relation=in, xy=[a point in its half], low_end=\"left\"): both end with long side left-right and toe (the lower, flatter end) pointing left.\n- Do one shoe completely, move that arm home, then the other. Do not re-grasp a shoe that already lies right.\n- Before done: both shoes inside the box, each in its own half, released, toes left (check the images).",
+ "goal": "Both shoes released inside the shoe box, each in its own half (the one from the left side nearer the robot), long sides left-right, toes left."
+}

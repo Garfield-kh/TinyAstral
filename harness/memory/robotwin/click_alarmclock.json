@@ -1,0 +1,5 @@
+{
+ "task": "click_alarmclock",
+ "text": "- Locate the alarm clock matching the instruction (smooth finish, bedside-table, compact); note its center x,y and top_z. If multiple, choose the described one.\n- Use the arm named in the instruction; if none, use left. Right-arm presses in practice often hit off-center; avoid unless required.\n- Press directly: press {\"arm\": chosen, \"object\": \"alarm_clock\", \"direction\": \"down\"}; do not grasp/move/reposition.\n- Before done, verify from images and result that the top center button visibly changed/depressed and pressed_point_cm is at top_z and near the object's center (within ~2 cm; tighter for compact clocks). If off-center or no visible change, re-locate and press again; do not call done.\n- Home the used arm, then done with checks [\"pressed\", \"alarm_clock\"], [\"released\", used_arm]. Do not add upright/on_table.",
+ "goal": "Target alarm_clock's top center button is visibly pressed; used arm is released and homed."
+}

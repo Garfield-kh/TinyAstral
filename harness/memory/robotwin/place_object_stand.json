@@ -1,0 +1,5 @@
+{
+ "task": "place_object_stand",
+ "text": "- Use named arm (right if specified; else left); locate target by description and displaystand by visual description (black open-frame, angled/smooth) before placing; pass xy=stand centre.\n- Grasp target top-down at body centre; do not move stand/other objects.\n- If place cannot see stand, locate it with description, then place at xy centre.\n- If OFF_TARGET, home, relocate object with description; if not visible, move arm to view, re-grasp, place again.\n- After release, home arm, open gripper; done only after checks on(object,stand) and released(arm) pass.",
+ "goal": "Target object rests on displaystand top near centre, arm home, gripper open, object released."
+}

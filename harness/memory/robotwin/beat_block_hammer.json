@@ -1,0 +1,5 @@
+{
+ "task": "beat_block_hammer",
+ "text": "- End state: the hammer is still held and its head rests on top of the block, touching it; the block stays in place.\n- Grasp handle/body with named arm (else arm on block side); if EMPTY_GRASP/opening 0/NOT_SEEN, home, locate by description, regrasp (try end/part) until holding true with nonzero opening.\n- Bring the head end over the block: carry the hammer with ref = the block, held_part = the end of the held hammer where the head points now (left end / right end / front end / back end), and a small height_cm (about 1-2) so the head comes down onto the block top; do not press hard.\n- Verify holding and check in the images that the head touches the block; do not chase exact heights or offsets of the hammer body. Once the images show the head on the block after a carry, call done right away while still holding: do not lower, nudge, re-carry, place or release the hammer.\n- Never done with an empty grip or with the head away from the block.",
+ "goal": "Hammer still held, its head resting on top of the block (touching it); block in place."
+}

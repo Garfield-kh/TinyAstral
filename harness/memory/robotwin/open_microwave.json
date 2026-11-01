@@ -1,0 +1,5 @@
+{
+ "task": "open_microwave",
+ "text": "- Use left arm only: locate microwave, `articulate` left `open` 90, then `home` left. Avoid right arm/carrying.\n- After home, verify from images that the door is visibly open and the microwave is still visible. A wide-open door often has y-size ~25+, but images decide.\n- Do not retry `open` just to reach 25+ if the door already looks open; repeated opening can over-swing and make the microwave `NOT_SEEN`, causing failure.\n- If y-size is still closed (~7-10) or door looks closed, retry once after home/locate. If `SHORT`/`NOT_SEEN`, home, locate, reassess; never call done while not visible.\n- Call `done` with empty checks only after visual confirmation; no `on_table`/`upright` checks.",
+ "goal": "Left arm has opened the microwave door wide open, left arm is home, and the microwave remains visible; no object held."
+}

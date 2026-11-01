@@ -1,0 +1,5 @@
+{
+ "task": "stack_blocks_three",
+ "text": "- Locate all blocks first; grasp body center top-down with either arm. If grasp slips, retry or switch arm.\n- Place red on table at xy [0,-13]; small offsets are fine. Home the placing arm before using the other arm.\n- Stack green on red, then blue on green: place with ref=red_block then ref=green_block, relation=\"on\"; keep centers over lower block and blocks upright, ignoring exact heights/yaw.\n- If place returns OFF_TARGET, re-grasp that same block and place again before moving on; if a block is not seen, locate it by description and do not finish until placed.\n- Before done, verify via checks/images: green on red, blue on green, red on table, both arms released; never use empty checks.",
+ "goal": "Red block on table near [0,-13], green centered on red, blue centered on green, all upright, both arms released."
+}

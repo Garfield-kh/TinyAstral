@@ -1,0 +1,5 @@
+{
+ "task": "place_fan",
+ "text": "- End state: fan standing upright on the named mat (roughly centred on it), its front (the grille side) facing the robot, gripper released; mat unmoved.\n- Use named arm, else same-side. Grasp body centre across narrow side only when visible and near located centre; avoid handle/top grasps. If EMPTY_GRASP/NOT_SEEN, re-locate with description; never switch unseen object.\n- Place ref=mat, relation=on, xy=mat centre, face=\"front\"; if the images show which way the grille points now, also pass face_now. Avoid align/handover unless needed.\n- After a place that leaves the fan standing on the mat, do not re-grasp it to fix an offset of a few cm or the bottom height reading: the cameras often read the fan's bottom 2-3 cm above the mat although it stands on it, and re-grasping a placed fan often knocks it over or turns it. Re-grasp only if it fell, is off the mat, or clearly faces sideways/away.\n- Before done, verify on, upright, released, and visually confirm the grille faces the robot.",
+ "goal": "Fan standing upright on the named mat, grille facing the robot, released."
+}

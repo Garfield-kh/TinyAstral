@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="500" viewBox="0 0 1280 500" role="img" aria-label="TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents. Evolve the harness. Distill the teacher. Deploy the student.">
+  <defs>
+    <radialGradient id="g1" cx="18%" cy="0%" r="70%">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="88%" cy="20%" r="60%">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="astral" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0b86a8"/>
+      <stop offset="1" stop-color="#6d3fd6"/>
+    </linearGradient>
+    <linearGradient id="topline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0e86a8"/>
+      <stop offset="1" stop-color="#0e86a8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="topline-npu" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d97706"/>
+      <stop offset="1" stop-color="#d97706" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".35" stop-color="#fff" stop-opacity="1"/>
+      <stop offset=".7" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="gridmask"><rect width="1280" height="500" fill="url(#fade)"/></mask>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M56 0H0V56" fill="none" stroke="#64748b" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <style>
+    text { font-family: Inter, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    .num { font-weight: 700; fill: #0f1b2d; }
+    .lbl { font-size: 14px; fill: #475569; }
+  </style>
+
+  <rect x=".5" y=".5" width="1279" height="499" rx="18" fill="#f8fafc" stroke="#e2e8f0"/>
+  <rect width="1280" height="500" rx="18" fill="url(#g1)"/>
+  <rect width="1280" height="500" rx="18" fill="url(#g2)"/>
+  <rect width="1280" height="500" fill="url(#grid)" opacity=".07" mask="url(#gridmask)"/>
+
+  <!-- title -->
+  <text x="640" y="150" text-anchor="middle" font-size="104" font-weight="700" letter-spacing="-3">
+    <tspan fill="#0f1b2d">Tiny</tspan><tspan fill="url(#astral)" font-weight="600">Astral</tspan>
+  </text>
+  <text x="640" y="205" text-anchor="middle" font-size="25" font-weight="500" fill="#334155">Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents</text>
+  <text x="640" y="252" text-anchor="middle" font-size="21" font-weight="600">
+    <tspan fill="#0e7490">Evolve the harness.</tspan><tspan fill="#b45309" dx="10">Distill the teacher.</tspan><tspan fill="#6d28d9" dx="10">Deploy the student.</tspan>
+  </text>
+
+  <!-- stat cards: 4 x 210 + 1 x 290 + 4 x 16 gaps = 1194; left margin 43 -->
+  <g transform="translate(43,312)">
+    <g>
+      <rect width="210" height="128" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+      <rect width="210" height="2" fill="url(#topline)"/>
+      <text x="18" y="62" class="num" font-size="30">33.4<tspan fill="#64748b" font-weight="400" dx="6">→</tspan><tspan dx="6">63.6</tspan></text>
+      <text x="18" y="98" class="lbl">Teacher, weights frozen (%)</text>
+    </g>
+    <g transform="translate(226,0)">
+      <rect width="210" height="128" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+      <rect width="210" height="2" fill="url(#topline)"/>
+      <text x="18" y="62" class="num" font-size="30"><tspan fill="#0e7490">62.8</tspan><tspan fill="#64748b" font-weight="400" font-size="18" dx="7">vs</tspan><tspan fill="#b45309" dx="7">63.6</tspan></text>
+      <text x="18" y="98" class="lbl">4B student vs. ~180B teacher</text>
+    </g>
+    <g transform="translate(452,0)">
+      <rect width="210" height="128" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+      <rect width="210" height="2" fill="url(#topline)"/>
+      <text x="18" y="62" class="num" font-size="30">6<tspan font-size="19" font-weight="600" dx="8">benchmarks</tspan></text>
+      <text x="18" y="98" class="lbl">3 training + 3 zero-shot</text>
+    </g>
+    <g transform="translate(678,0)">
+      <rect width="210" height="128" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+      <rect width="210" height="2" fill="url(#topline)"/>
+      <text x="18" y="62" class="num" font-size="30">≈1/45</text>
+      <text x="18" y="98" class="lbl">of the teacher's parameters</text>
+    </g>
+    <g transform="translate(904,0)">
+      <rect width="290" height="128" rx="12" fill="#fff8ed" stroke="#f0b35a"/>
+      <rect width="290" height="2" fill="url(#topline-npu)"/>
+      <path transform="translate(16,41) scale(0.92)" d="M13.5 2L4 13.5h6.5L9.5 22 20 9.5h-6.5z" fill="#d97706"/>
+      <text x="40" y="60" class="num" font-size="20">Huawei Ascend Atlas A2</text>
+      <text x="18" y="98" class="lbl">Runs the real-robot planner</text>
+    </g>
+  </g>
+</svg>

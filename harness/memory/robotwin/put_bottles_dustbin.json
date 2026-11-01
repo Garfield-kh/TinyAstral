@@ -1,0 +1,5 @@
+{
+ "task": "put_bottles_dustbin",
+ "text": "- The dustbin stands on the floor beside the table on its left side, below the table top; only the left arm reaches over it, near the table's left edge (expert demos). The tools find it there when it is the ref of place with relation \"drop\".\n- One bottle at a time. A bottle on the left half: the left arm grasps it (body centre), then place(arm=left, object=bottle, ref=dustbin, relation=\"drop\"). A bottle on the right half: the right arm grasps it, handover(object=bottle, to_arm=left, mode=\"air\"), then the left arm drops it the same way.\n- After each drop move the left arm home, check the images, then do the next bottle. If a drop says UNREACHABLE, move the held bottle a little to the left and lower (move dx -5 dz -3) and drop again.\n- End state: all three named bottles inside the dustbin, released, none on the table or held. Done only when the images and in(bottle, dustbin) checks agree for all three.",
+ "goal": "Three named bottles inside the dustbin beside the table (below the table top), released, none held or on the table."
+}

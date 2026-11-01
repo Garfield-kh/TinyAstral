@@ -1,0 +1,5 @@
+{
+ "task": "stack_bowls_two",
+ "text": "- Identify base bowl from wording (the one stacked on); grasp part=rim, place it first ref=table xy=[0,-10]. If OFF_TARGET or offset >3 cm/bottom_z outside 0-3, re-grasp and re-place; accept <=3 cm.\n- If rim grasp fails, home arm, locate by description, try other arm; use body grasp only as last resort. For NOT_SEEN, home, re-locate, then grasp; never done.\n- Place upper bowl ref=base relation=on. Accept OK or RELEASED_NOT_SEEN/nested only when that final place targeted the base and images do not show it fallen; table/off-target/failed place is not stacked.\n- After final place, home both arms, verify base on_table near target and both released; if upper not seen, use images/descriptions, then done.\n- Either arm may be used; follow wording when clear, but ambiguous cases may use either bowl as lower.",
+ "goal": "Lower bowl on_table near xy [0,-10] within 3 cm, bottom_z 0-3; upper bowl released on/nested in it; both arms released."
+}

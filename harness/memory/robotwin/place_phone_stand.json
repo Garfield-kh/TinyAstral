@@ -1,0 +1,5 @@
+{
+ "task": "place_phone_stand",
+ "text": "- Use the arm nearest the phone; grasp body centre across the narrow side, top-down, and lift. If that arm slips, try the other arm body-centre; do not grasp phone ends.\n- Place with relation \"in\" (not \"against\") toward the stand's current centre; small offsets are acceptable, but avoid xy fine-tuning unless a fresh locate shows the stand moved.\n- After each place, check from the images that the phone stands in the stand leaning on it (expert demos end with the phone 1-2 cm from the stand's centre), upright and released; if it leans beside the stand or fell, re-grasp and place again.\n- If OFF_TARGET and phone is flat/low, locate phone and stand, re-grasp body centre, and retry; stop repeated adjustments once checks pass.",
+ "goal": "Phone standing in the stand, leaning on it, both grippers open."
+}

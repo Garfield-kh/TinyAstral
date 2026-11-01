@@ -1,0 +1,5 @@
+{
+ "task": "place_container_plate",
+ "text": "- Locate target cup and plate first. If instruction names an arm, use it; otherwise choose arm on cup side (x<0 left, x>0 right).\n- Grasp cup body centre top-down; avoid rim unless body fails. If UNREACHABLE, try other arm once; if still UNREACHABLE, home the non-grasping arm and retry body centre.\n- If NOT_SEEN/EMPTY_GRASP, re-locate using the instruction description; do not switch to another similar object.\n- Call place(arm, cup, plate, \"on\"); it moves to plate top and releases. No extra lift/release/home unless place fails.\n- Before done, verify on(cup, plate), released(arm), cup center over plate footprint, gripper open, and cup upright/stable; ignore exact bottom height or few-cm centering.",
+ "goal": "Cup rests upright and stable on the gray plate, centered over its footprint, with the grasping arm released."
+}

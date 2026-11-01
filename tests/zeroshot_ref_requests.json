@@ -1,0 +1,17 @@
+{
+ "simplerenv": {
+  "len": 59689,
+  "sha256_full": "141bf659126d8226358ae621e285c3b7000ad164c427450ea7744ef6b0c84d5d",
+  "sha256_text": "93dfe4fe6a82e3d7f3170945b76b70ece828d7cc4d1d9f1f951ce43cbe7cb144"
+ },
+ "vlabench": {
+  "len": 75701,
+  "sha256_full": "f6213fc1ea891f44bed6858b854446e3821f9cda264db03301015d544d368ee7",
+  "sha256_text": "8d2a05df90cf762a6116f1e9f59872fe4b93eaf656591ea4a416c8f740d1d6b0"
+ },
+ "embodiedbench": {
+  "len": 89376,
+  "sha256_full": "db8e7729e17829945cb938cc824209875e9aad9ca7aa35dbb1d5fa390e2ce05d",
+  "sha256_text": "6741b969d352a7d3380ce80ba4f4424a143a90a93aaaaf3f43bb2333dc95ca91"
+ }
+}

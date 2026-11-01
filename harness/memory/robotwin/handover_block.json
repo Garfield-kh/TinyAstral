@@ -1,0 +1,5 @@
+{
+ "task": "handover_block",
+ "text": "- Locate red_block and blue_pad; grasp red_block with left using body-centre across narrow side, lift, handover to right, then place right on blue_pad using ref=blue_pad, relation=on, keeping it upright.\n- Long bars often fall over; if place reports OFF_TARGET, fell over, regrasped, or object_now is short/flat, do not done—locate, re-grasp with right, place again, then re-verify upright.\n- If handover returns EMPTY_GRASP or object is not visible, locate with description, home if needed, and re-grasp with body-centre; avoid end-part grasps, repeated blind grasps, and xy nudges for tipping.\n- Before done, verify on, upright, and released both arms; omitting upright can pass local checks but fail hidden test.\n- Do not require exact centering or 1 cm height; on checks passed with bottom 1.5–2.3 cm and offsets up to ~2.7 cm.",
+ "goal": "red_block is on blue_pad, upright, and released by both arms."
+}

@@ -1,0 +1,5 @@
+{
+ "task": "handover_mic",
+ "text": "- Grasp with nearer arm; prefer part=\"handle\" if visible, because body-centre grasps often make carry UNREACHABLE. Try carry to x=0,y=-5 at 15-20 cm; if UNREACHABLE, lift 20-25 cm and move in small steps; lower on POSE_ERR.\n- Handover may go via table and drop the mic away. If EMPTY_GRASP/NOT_SEEN, locate and re-grasp with receiving arm; if it is UNREACHABLE, keep first arm holding and move the mic closer.\n- After handover, keep the whole microphone, head end included and not just its centre, on the receiving arm's side (x<0 for the left arm, x>0 for the right arm) near y=-5, then lift until verify reports bottom 20-25 cm; if lift PLAN_FAIL, use small dz moves.\n- Before done, verify holding by receiving arm, released by first arm, the microphone clearly on the receiving arm's side near y=-5 (do not move it toward the middle), and bottom 20-25 cm. A closed gripper or height target 15/18 is not proof.",
+ "goal": "Receiving arm holds the microphone on its own side near the front, bottom 20-25 cm above table; first arm released."
+}

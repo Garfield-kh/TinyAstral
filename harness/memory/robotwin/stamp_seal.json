@@ -1,0 +1,5 @@
+{
+ "task": "stamp_seal",
+ "text": "- If first locate misses mat or returns implausible seal, re-locate with richer descriptions; use same-side arm (right worked), grasp body centre across narrow side top-down; if UNREACHABLE try other arm/part or move object closer.\n- Place at mat centre xy. If OFF_TARGET/fell over, re-locate, re-grasp, place again; don't push blindly.\n- The placement itself is the stamp: after the seal is put down on the mat centre, do not press or push it again (expert demos only place it and open the gripper).\n- Verify on, upright, released before done. A success passed with height false, so do not require bottom_z within 0.5 cm or re-place solely for floating; ensure not tipped.\n- Never done after failed place or while arm still holding.",
+ "goal": "Red seal upright at the centre of the orange mat, both grippers open; no extra press."
+}

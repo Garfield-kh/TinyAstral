@@ -1,0 +1,5 @@
+{
+ "task": "adjust_bottle",
+ "text": "- Use named arm; locate instructed bottle by description; keep that object; do not switch arms, push, or grasp similar can.\n- For lying bottle, grasp part \"left end\"; if unreachable, move closer or try other end, not handle. Keep holding; avoid release/place unless lost.\n- Carry to x=-25 (left) or +25 (right), y=-12. If carry is UNREACHABLE, use small move steps toward target; avoid large dx/dy and never lower to fix xy.\n- Lift/carry with height_cm 24; verify center height 23-26 cm from object center/top_z or images, not just bottom >=10. Stop once center height passes; do not lower.\n- Before done verify holding, center height, and xy within 3 cm; never done after release or with low center.",
+ "goal": "Named arm holds the instructed bottle at x=±25, y=-12, center height 23-26 cm, xy within 3 cm; no release."
+}

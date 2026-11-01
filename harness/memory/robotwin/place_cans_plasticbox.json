@@ -1,0 +1,5 @@
+{
+ "task": "place_cans_plasticbox",
+ "text": "- Locate cans/box; re-locate by description if any size/height is zero or implausible. Grasp left can/right can body-center top-down, bimanual if asked; if grasp fails, re-locate and retry same arm; never hand over, grasp, or move box; avoid rim grasps.\n- Place separately: left xy box center x-3.5, box-center y; right xy x+2.0, y-3 (the box has two can spots offset from each other front-to-back, so box-center y can land a can between them). Home the placed arm before next place.\n- After each place inspect object_now: center over box, bottom_z below rim and near table (3-5 cm when top_z ~7.4), not on other can. Upright is NOT required. If OFF_TARGET, unseen, offset >2 cm, or bottom_z >5 cm, locate and re-grasp.\n- If a can is unseen, locate by description and re-grasp if outside. Verify in both, bottom low, released both, not stacked; once that holds, stop: never re-grasp a can that is already in the box just to stand it up; never done with empty checks or one can.",
+ "goal": "Both cans are inside the plasticbox, released, not stacked, with bottoms low below the rim (lying or upright both count)."
+}

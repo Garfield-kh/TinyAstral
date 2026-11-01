@@ -1,0 +1,5 @@
+{
+ "task": "blocks_ranking_size",
+ "text": "- Locate three block objects; do not rely on color/name. If NOT_SEEN/grasp fails, re-locate with visual description and use fresh center. Avoid non-block substitutes if block candidates exist.\n- After confirming identities, rank roles from first reliable locate: longest side, tie-break volume/second side; record IDs. Never re-rank from later noisy sizes.\n- Place small first x≈10–12, medium x≈0–2, large x≈-10 to -12, y≈-10, with gaps. Use either arm, top-down body grasp; if OFF_TARGET/regrasp, re-locate, switch arm, space more, no pushing.\n- Before done, verify by IDs: all three on_table, released, left_of large medium, left_of medium small. Done only when pass; never if missing/off-table or order re-derived from current sizes.",
+ "goal": "Three block objects released on table in one row near y=-10, left-to-right largest, medium, smallest, with clear gaps."
+}

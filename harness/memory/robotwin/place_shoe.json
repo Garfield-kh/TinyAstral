@@ -1,0 +1,5 @@
+{
+ "task": "place_shoe",
+ "text": "- Locate shoe and the pad; grasp the shoe body centre across its narrow side, top-down (use the requested arm; else the arm on its side).\n- End state (as in the expert demos): the shoe lies on the pad with its long side left-right and its toe (the lower, flatter end) pointing left, released. Put it down with place(ref=pad, relation=on, low_end=\"left\"); the tool turns it and checks the turn again after letting go.\n- If the result says OFF_TARGET by several cm, re-grasp and place again with low_end=\"left\". Do not finish with the toe pointing right or the shoe across the pad.\n- Before done verify on(shoe, pad) and released, and look at the images: toe to the left, shoe flat on the pad.",
+ "goal": "Shoe on the pad, long side left-right, toe (lower end) pointing left, released."
+}

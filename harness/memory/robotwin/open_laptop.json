@@ -1,0 +1,5 @@
+{
+ "task": "open_laptop",
+ "text": "- Use named arm; if none, arm=\"auto\". Do not move/grasp/switch. Keep the arm returned by articulate holding the lid edge (do not release or home it).\n- Locate laptop, then one articulate motion=\"open\", degrees 80-90. EXECUTED/handle_found alone is not enough; accept low swing_deg only if images show the lid open.\n- After articulate, keep holding the lid and visually verify it is open. Expert demos end with the opening gripper still on the lid edge; a failure had EXECUTED and passing on_table/released checks but the hand had let go.\n- Do not rely on done checks or height; on_table can pass while the lid is closed. If images show the lid closed, retry one open unless the instruction says one motion.\n- Do not chase 13-15 cm or add articulations; extra attempts can close/move the laptop.",
+ "goal": "Laptop lid visibly open, laptop on table, the opening gripper still holding the lid edge; no height requirement."
+}

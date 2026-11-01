@@ -1,0 +1,5 @@
+{
+ "task": "shake_bottle_horizontally",
+ "text": "- Use the arm named in the instruction; if none, use the arm on the bottle’s side. Grasp the bottle body top-down at body centre.\n- Lift to 20-25 cm; verify the lift result shows gripper_z in that range before shaking.\n- Shake horizontally with at least five alternating dx moves (±8-10 cm if accepted); keep dy=0 and dz=0.\n- If a dx move returns PLAN_FAIL, retry with smaller alternating dx (2-3 cm); do not use dy/dz or re-grasp.\n- Even if the sentence says to release or put it down, end still holding it raised after the shaking.\n- Before done, verify checks pass: [[\"holding\", arm, \"bottle\"], [\"height\", \"bottle\", 15]], and that the alternating dx moves succeeded.",
+ "goal": "Bottle held by chosen arm, bottom above 15 cm, after horizontal shaking."
+}

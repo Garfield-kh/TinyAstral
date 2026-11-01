@@ -1,0 +1,5 @@
+{
+ "task": "move_can_pot",
+ "text": "- Use named arm, or arm on can’s side; grasp sauce_can body centre across narrow side. Never move kitchenpot.\n- Place on can’s starting side: `place ref kitchenpot relation left_of/right_of`. If same_row off >3 cm, not left/right, or lying, re-grasp top-down and `place ref table xy` with y=pot_y, x=pot_x ± (pot_radius+can_radius+2-4 cm).\n- After each place verify `upright`, `same_row`, `left_of/right_of`, `released`, and pot unchanged; if fail, re-grasp at current center and retry same xy. A high bottom reading alone is not a failure: the pot often hides the lower part of the can from the cameras.\n- If NOT_SEEN or lost, home same arm, locate with visual description, grasp body centre (or side/end if lying); do not handover or call done with empty checks.",
+ "goal": "sauce_can upright, released, on table beside pot on starting side, same_row within ~3 cm, centre distance ~12-18 cm, pot unmoved."
+}

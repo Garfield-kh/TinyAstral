@@ -1,0 +1,5 @@
+{
+ "task": "move_stapler_pad",
+ "text": "- Locate stapler and named pad; if pad hidden or locate returns wrong/large pad, re-locate with color/description. Use instruction arm if given, else nearer arm.\n- Grasp stapler body centre across narrow side, top-down. If grasp tilted, multiple attempts, or lift test uncertain, re-grasp before moving.\n- Place with ref=pad, relation=on; align=true if available. Successes had bottom_z 0.0 on pad top 0.1 and placed_offset <=0.8 cm; keep offset <=1.5 cm, re-place if larger.\n- Do not require ±90 orientation: successes passed with turned_deg 85, 31, and -45. Verify centre over pad box and flat/released.\n- Call done only after verify: [[\"on\",\"stapler\",\"pad\"],[\"released\",\"arm\"]] true, with centre over pad and bottom_z at pad top.",
+ "goal": "Stapler flat, centred, and released on the named pad/mat, bottom resting on pad top; no fixed orientation required."
+}

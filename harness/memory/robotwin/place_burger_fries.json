@@ -1,0 +1,5 @@
+{
+ "task": "place_burger_fries",
+ "text": "- Locate tray first; if hamburg/fries are not visible, locate with a visual description from the instruction before grasping.\n- Grasp hamburg with left and fries with right using top-down body-center grasps. If grasp is EMPTY/NOT_SEEN, home, re-locate with a new description, and retry; never move/grasp blindly.\n- Place each object on tray with ref=tray, relation=on, xy near tray center: hamburg left, fries right, same y, separated. Exact 7 cm is not critical; keep both inside tray.\n- After each place, inspect result/images: if OFF_TARGET, RELEASED_NOT_SEEN, or object not on tray, re-locate/grasp at measured object_now center and place again; do not continue or call done.\n- Call done only after verify hamburg and french_fries are on tray, hamburg left_of fries, and both arms released.",
+ "goal": "Hamburg and french_fries rest on the medium tray, not toppled, separated with hamburg left of fries, and both arms are released."
+}

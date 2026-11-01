@@ -1,0 +1,5 @@
+{
+ "task": "stack_blocks_two",
+ "text": "- Locate red and green first; blocks start separate on table.\n- Use the arm named in instruction; if none, either arm may grasp a block body top-down.\n- Move red first to table xy=[0,-13]; accept placed_offset <=3 cm, but re-place if larger or if red is not on table.\n- Grasp green and place with ref=\"red_block\", relation=\"on\"; never place green by absolute table xy.\n- If green place returns OFF_TARGET, recover by placing green on table clear of red, re-grasp, and retry; verify red remains on table.\n- Before done, verify green on red, red on table, and all used arms released/home.",
+ "goal": "Red block on table near center; green block stably on top of red; all used arms released."
+}

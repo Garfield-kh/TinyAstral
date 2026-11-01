@@ -1,0 +1,5 @@
+{
+ "task": "place_object_basket",
+ "text": "- If target NOT_SEEN, locate with visual description; grasp top-down at body centre across narrow side.\n- Place target \"in\" basket. If UNREACHABLE, handover/switch arm and retry; if OFF_TARGET, re-grasp and place again. Accept place OK/RELEASED_NOT_SEEN even if target later not visible; do not require an \"in\" check then.\n- Grasp basket with opposite arm by handle; verify result/image shows \"handle arching over top\" and point on basket. If \"no thin protrusion\" or far point, retry other arm/re-locate; do not proceed.\n- Lift/move basket with relative dz 3-5 cm; verify holding, basket height ~3-4 cm, and target in basket if visible. If target not visible, verify only holding/height after a prior place OK.\n- Call done only after these verifications pass; do not move basket until target placement is OK.",
+ "goal": "Target released in basket; opposite arm holds basket by valid handle; basket lifted about 3-4 cm."
+}

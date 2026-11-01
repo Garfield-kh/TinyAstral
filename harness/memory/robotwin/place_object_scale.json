@@ -1,0 +1,5 @@
+{
+ "task": "place_object_scale",
+ "text": "- Use named arm; if none, right only. Do not switch arms after UNREACHABLE/SLIPPED; home, re-locate, retry same arm (try part if needed).\n- Locate object and scale with visual descriptions before grasp/place; place needs scale visible.\n- Grasp body centre; retry EMPTY_GRASP/SLIPPED gently. Place ref \"electronicscale\", relation \"on\"; if OFF_TARGET/RELEASED_NOT_SEEN/fell, home, re-locate, re-grasp, retry; avoid repeated nudging; never drag/move scale.\n- Before done, verify near and released true; verify on when visible. If on fails only for visibility or small height mismatch, near+released may pass; never done with released-only, null checks, or object below scale top; re-locate if invisible.",
+ "goal": "Object rests on the electronicscale top, near/over it, released, with small offsets allowed and not below the surface."
+}

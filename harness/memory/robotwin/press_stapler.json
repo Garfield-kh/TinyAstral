@@ -1,0 +1,5 @@
+{
+ "task": "press_stapler",
+ "text": "- Locate the stapler first; if multiple/ambiguous or press is UNREACHABLE, locate again with the instruction's full description (e.g., white stapler with metal tray) before pressing.\n- Use the instructed arm (left/right; if none, nearest arm) and press the stapler downward; do not lift, drag, rotate, or reposition it.\n- After press OK, home the same arm so the gripper opens/releases.\n- Before done, verify from images/predicates that the stapler remains on the table and the arm is released; if on_table cannot see the stapler, re-locate with description and retry done.",
+ "goal": "Stapler remains on table, unlifted and unrepositioned; instructed arm has pressed it downward and is homed/released."
+}

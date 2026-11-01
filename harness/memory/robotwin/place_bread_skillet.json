@@ -1,0 +1,5 @@
+{
+ "task": "place_bread_skillet",
+ "text": "- Grasp the dark skillet by its handle with one arm and lift/carry it to a stable point about 8 cm above the table; keep holding it.\n- Grasp the golden bread with the other arm and place it with relation \"in\" the held skillet; release and home the placing arm.\n- Do not require a specific tilt, long-side orientation, or exact 5-10 cm height; success only needs the skillet held and lifted enough to pass a height check (about 5 cm).\n- Verify before done: bread is inside the skillet, the holding arm still holds the skillet, and skillet height is at least 5 cm.\n- If bread is not inside, re-place it into the held skillet rather than adjusting the skillet pose.\n- The bread should end near the middle of the held skillet (not on its edge); the tool re-measures the held skillet before letting the bread go.",
+ "goal": ""
+}

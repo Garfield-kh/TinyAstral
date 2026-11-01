@@ -1,0 +1,5 @@
+{
+ "task": "place_empty_cup",
+ "text": "- Locate cup and coaster; if coaster looks elongated/far or inconsistent, re-locate it as \"small round wooden coaster disc\" before acting.\n- Use the arm on the cup side (left worked for x<0); grasp cup body top-down across the narrow side. If EMPTY_GRASP, re-locate cup and retry top-down, not tilted.\n- Place with object=cup, ref=coaster, relation=on; successes need no xy corrections, offsets ~0.2-0.3 cm, bottom_z ~0.0.\n- Home the arm after release, then verify on, upright, released; if upright fails, home and reverify before any re-grasp.\n- Call done only after verify passes: cup center over coaster footprint, upright height ~9+ cm, released.",
+ "goal": "Cup rests upright on the coaster with its center over the coaster footprint, bottom_z about 0.0, and the arm released."
+}

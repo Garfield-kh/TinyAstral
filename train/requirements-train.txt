@@ -1,0 +1,22 @@
+# Training environment used for the released students (Python 3.11, CUDA 12.8 wheels).
+# Install torch/torchvision from the matching CUDA index first, e.g.
+#   pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0
+torchvision==0.26.0
+ms-swift==4.5.3
+transformers==5.3.0
+deepspeed==0.19.7
+accelerate==1.14.0
+peft==0.19.1
+trl==0.29.1
+datasets==4.8.4
+modelscope==1.40.2
+qwen-vl-utils==0.0.14
+triton==3.6.0
+numpy==1.26.4
+pillow==12.3.0
+av==18.1.0
+decord==0.6.0
+tensorboard==2.21.0
+# flash-attention: build/install separately (pip install flash-attn==2.8.3.post1 --no-build-isolation)
+# Optional, speed only (Qwen3.5 linear-attention layers): flash-linear-attention==0.5.2 fla-core==0.5.2

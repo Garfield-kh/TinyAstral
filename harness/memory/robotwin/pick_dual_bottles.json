@@ -1,0 +1,5 @@
+{
+ "task": "pick_dual_bottles",
+ "text": "- Locate and match described bottles to IDs; don't assume order. Grasp left bottle with left arm, right bottle with right arm at body center. If EMPTY_GRASP, re-home/move closer and retry body center once; if UNREACHABLE, try other arm body center once or one push. If push PLAN_FAIL/moved 0 or both arms fail, give up.\n- Never release a held bottle to chase the other.\n- Carry to front points near [-6,-10] and [6,-10], height_cm 15. If carry UNREACHABLE, move small 3-5 cm steps toward target (dy negative, dz 1-3); don't lift to 25 from low gripper.\n- Keep bottles upright; exact spacing not required, but bottoms >12 cm and near 15 cm.\n- Before done, verify images show correct described bottles, and predicates holding correct IDs, lifted >12, near targets.\n- Once both bottles are held (one per arm), raise them together with bimanual([present(left, xy=[-6, -10], height_cm=15), present(right, xy=[6, -10], height_cm=15)]); keep holding both.",
+ "goal": "Both described bottles are held, one per arm, at front points near (-6,-10) and (6,-10), bottoms >12 cm and near 15 cm."
+}

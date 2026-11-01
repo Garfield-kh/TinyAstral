@@ -1,0 +1,5 @@
+{
+ "task": "turn_switch",
+ "text": "- Locate first; if not visible, home and locate again with a description matching the instruction (color/size/features). Press only the located object named 'switch'; never grasp/carry or nudge.\n- Press with named arm if given, otherwise either arm. After press, home and judge from the images whether the switch flipped. The switch is mounted and sits above the table from the start (its normal resting height); do not add on_table or height checks.\n- If NOT_SEEN/PLAN_FAIL, home, locate, retry press once. If the images show it has not flipped, retry the press once (another direction); once it has flipped, do not press it again (a second press can flip it back).\n- Call done with checks [[\"released\", arm]] once the images show the switch flipped.\n- The switch is a thin upright rocker plate: press it with direction \"into_face\" (the tool pushes along the plate's own normal on its raised half). If the images show it did not flip, press once more.",
+ "goal": "Switch flipped to the other position, left where it is mounted, gripper released; one successful press is enough."
+}

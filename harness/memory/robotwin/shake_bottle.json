@@ -1,0 +1,5 @@
+{
+ "task": "shake_bottle",
+ "text": "- Use named arm; if none, start on bottle side. Grasp body centre across narrow side, top-down or tilted; retry same body-centre if grasp fails before changing arm/part.\n- Lift to ~15-25 cm; avoid end grasps when upright is needed.\n- Shake with dz +/-5 cm for at least 3 full cycles, xy fixed. If a move PLAN_FAILs, retry with smaller dz (e.g. 4 cm) and continue cycles.\n- Do not place/release: whatever the sentence says about putting it down afterwards, the task ends with the bottle still held and raised well above the table after shaking; call done after verifying holding and height (add upright if passing).\n- Always end with done; never output None/null.",
+ "goal": "End holding the bottle raised well above the table after shaking (even if the sentence mentions putting it down)."
+}

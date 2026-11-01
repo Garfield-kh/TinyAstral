@@ -1,0 +1,5 @@
+{
+ "task": "place_a2b_right",
+ "text": "- Use named arm; else arm on movable object's side (left if x<0, right if x>0). Grasp body centre top-down across narrow side.\n- If grasp is EMPTY_GRASP/NOT_SEEN or object seems mislocated, re-locate with a visual description, then retry; do not place from a failed grasp.\n- Locate both objects, then place(movable, reference, \"right_of\") and release; do not manually compute a fixed gap.\n- If place returns OFF_TARGET because object fell or is unstable, regrasp and place again; do not call done.\n- Call done only after verify passes: right_of, on_table, released; include same_row only if required. Successes had ~9-12 cm right offsets and small positive bottom_z, so do not require exact gap, bottom_z, or orientation.",
+ "goal": "Movable object is right of reference, on table, released by the used arm; same_row only if required."
+}

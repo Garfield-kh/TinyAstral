@@ -1,0 +1,5 @@
+{
+ "task": "place_a2b_left",
+ "text": "- Locate both objects; if either is invisible or verify gives impossible distance, re-locate it with full description before moving A.\n- Use named arm; grasp A's body centre across narrow side. If SLIPPED or rose_cm small, re-locate and retry the grasp.\n- Place A on table at xy=(B.x-13,B.y), not by left_of relation; aim ~12-14 cm left and same y, not exact offsets.\n- Home arm before verify if gripper hides B or checks null; verify left_of, on_table, released, same_row.\n- Call done only after all_pass true; if already passing, stop.",
+ "goal": "A rests on table, released, left of B by about 12-14 cm and same row."
+}

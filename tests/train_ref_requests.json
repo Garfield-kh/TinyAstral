@@ -1,0 +1,18 @@
+{
+ "robotwin": {
+  "len": 47233,
+  "sha256_full": "f4c93b809619a00d85b3ac761b898b9b1c7d2d4cd65b81cbb4ac34cbfb689d5a",
+  "sha256_text": "889b6496ac4a6115f9646e9d9210c65b8b2dad4c3d15f386d9042ef3192c9ad7",
+  "sha256_text_masked_pos": "86fd1fee04aab70322e79a6f5a4dbf32fd2af6ba08f450f7e8076b4194ed1b94"
+ },
+ "guava": {
+  "len": 259436,
+  "sha256_full": "ee6609641038e0fdcaf2bd296880577776718aaffb5a56de956cd9a055f1905a",
+  "sha256_text": "3de22b2910e12df05359cff7b7d8f3bd0f6558415a5e8802bdab63f964e0a3af"
+ },
+ "libero": {
+  "len": 71470,
+  "sha256_full": "9df44d804cfe20793a17212ed7efb01d0539f1df1b19c60cd1dd029ea53cfcca",
+  "sha256_text": "ac0b50923b78e238ac111f065c89b4139c7b87306d2ad2f1a89db86e5cf58aa1"
+ }
+}

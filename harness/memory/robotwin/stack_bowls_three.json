@@ -1,0 +1,5 @@
+{
+ "task": "stack_bowls_three",
+ "text": "- Locate all (the three bowls are identical, same model, so any bowl can go in any layer); if IDs conflict or bowls vanish, re-locate with descriptions/images and trust visible size/position; never grasp NOT_SEEN.\n- Grasp rim top-down, either arm; if UNREACHABLE try other arm, stop if both fail/far edge. Avoid end grasps, bimanual, pushing.\n- Place base table central xy; verify object_now visible, bottom_z 0, near target. For upper bowls, place on lower bowl and verify object_now center over lower and expected bottom_z; if OFF_TARGET/RELEASED_NOT_SEEN/bottom_z 0, home, re-locate, recover.\n- Before done, locate all three: visible, released, stacked, aligned, correct heights; never take apart a correct nest to re-order it; if any lost/unreachable, give up.",
+ "goal": "Three bowls released, not held, vertical stack in any order (bowls identical); centers aligned within a few cm; middle bottom ~2-3 cm, top bottom ~5-6 cm."
+}

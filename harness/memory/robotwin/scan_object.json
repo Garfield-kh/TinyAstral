@@ -1,0 +1,5 @@
+{
+ "task": "scan_object",
+ "text": "- Locate both first; if NOT_SEEN, locate with visual descriptions. Grasp scanner by handle and tea box body with separate arms.\n- Carry both to a reachable meeting point near table center, slightly toward robot, at height_cm 20, then bring the scanner head up to the box.\n- If a carry is UNREACHABLE, do not finish with repeated small moves; re-plan a closer meeting point within reach so both can be carried to the same height.\n- End state (expert demos): both objects held in the air; the box held still near the middle, and the scanner's scanning head brought right up to the box and pointed at the box centre, the box in line with the scanner's axis. Side by side apart is NOT enough.\n- Checks holding, lifted 18 and near can all pass while the scanner is still beside the box; call done only after the images show the scanner head pointing at the box centre from close by.",
+ "goal": ""
+}

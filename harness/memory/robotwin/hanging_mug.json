@@ -1,0 +1,5 @@
+{
+ "task": "hanging_mug",
+ "text": "- Keep end state: mug hung by its handle on the rack hook and released, off the table (lifted up at hook height), rack unmoved, mug not held. A mug standing on the table or leaning against the rack base is NOT hung.\n- Left arm: grasp mug body, rotate/place near table center/front. If right handle grasp is EMPTY_GRASP/UNREACHABLE or rack is far, use left for final hang; avoid repeated right handovers.\n- If rack not visible, home left and locate it with description; re-locate before final placement.\n- Do not use place ref rack relation against with large xy offsets; it leaves mug OFF_TARGET/on table. Carry/move the mug up to the rack hook (not to a low spot beside the rack), release, then re-grasp if OFF_TARGET.\n- Before done, verify in the images that the mug hangs on the hook above the table, rack unmoved, released; near/low height alone insufficient.",
+ "goal": "Mug hung by its handle on the rack hook, above the table, released, rack unmoved, not held/on table."
+}
