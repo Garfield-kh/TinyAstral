@@ -14,7 +14,7 @@ Runjia Tan<sup>3</sup>, Zhengyu Wen<sup>2</sup>, Qi Wang<sup>2</sup>, Xiaoyu He<
 [![Weights](https://img.shields.io/badge/%F0%9F%A4%97%20Weights-TinyAstral--4B%20%2F%202B%20%2F%200.8B-ffd21e?style=flat-square)](https://huggingface.co/kehong/TinyAstral-weights)
 [![Data](https://img.shields.io/badge/%F0%9F%A4%97%20Data-TinyAstral--SFT-ffd21e?style=flat-square)](https://huggingface.co/datasets/kehong/TinyAstral-SFT)
 
-[![CANN](https://img.shields.io/badge/CANN-Embodied--AI-c7000b?style=flat-square)](https://gitcode.com/cann/cann-recipes-embodied-ai)
+[![CANN · Embodied-AI](assets/badge_cann.svg)](https://gitcode.com/cann/cann-recipes-embodied-ai)
 [![Huawei Ascend Atlas A2](https://img.shields.io/badge/Runs%20on-Huawei%20Ascend%20Atlas%20A2-f5a524?style=flat-square)](#serving)
 
 </div>
