@@ -10,7 +10,7 @@ Runjia Tan<sup>3</sup>, Zhengyu Wen<sup>2</sup>, Qi Wang<sup>2</sup>, Xiaoyu He<
 <br>
 
 [![Homepage](https://img.shields.io/badge/Homepage-TinyAstral-22d3ee?style=flat-square)](https://garfield-kh.github.io/TinyAstral/)
-[![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b?style=flat-square)](#citation)
+[![arXiv](https://img.shields.io/badge/arXiv-2610.41216-b31b1b?style=flat-square)](https://arxiv.org/abs/2610.41216)
 [![Weights](https://img.shields.io/badge/%F0%9F%A4%97%20Weights-TinyAstral--4B%20%2F%202B%20%2F%200.8B-ffd21e?style=flat-square)](https://huggingface.co/kehong/TinyAstral-weights)
 [![Data](https://img.shields.io/badge/%F0%9F%A4%97%20Data-TinyAstral--SFT-ffd21e?style=flat-square)](https://huggingface.co/datasets/kehong/TinyAstral-SFT)
 
@@ -333,4 +333,15 @@ and are not redistributed; see [NOTICE](NOTICE).
 
 ## Citation
 
-The BibTeX entry will be added with the arXiv version.
+```bibtex
+@article{gong2026tinyastral,
+  title         = {TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents},
+  author        = {Gong, Kehong and Zheng, Xiaoxu and Hou, Guanli and Lee, Seunghun and Guo, Mengqi and Tan, Runjia and Wen, Zhengyu and Wang, Qi and He, Xiaoyu and Zhang, Mingyuan and Mi, Michael Bi},
+  journal       = {arXiv preprint arXiv:2610.41216},
+  year          = {2026},
+  eprint        = {2610.41216},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.RO},
+  url           = {https://arxiv.org/abs/2610.41216}
+}
+```
