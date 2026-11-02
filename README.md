@@ -28,6 +28,12 @@ then distilled into **0.8B–4B students** that take its place in the same harne
 close to its teacher on six benchmarks with about **1/45 of its parameters**, and drives a real SO-ARM101 arm closed loop,
 served on **Huawei Ascend Atlas A2**.
 
+<p align="center">
+  <a href="https://garfield-kh.github.io/TinyAstral/#video"><img src="assets/promo_thumb.jpg" width="80%" alt="TinyAstral overview video: a 4B student matches its 180B teacher on six benchmarks. Click to watch on the project homepage."></a>
+  <br>
+  <a href="https://garfield-kh.github.io/TinyAstral/#video"><b>▶ Watch the 85-second overview</b></a>
+</p>
+
 ## Evolve → Distill → Deploy
 
 <p align="center">
