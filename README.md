@@ -18,7 +18,6 @@ Runjia Tan<sup>3</sup>, Zhengyu Wen<sup>2</sup>, Qi Wang<sup>2</sup>, Xiaoyu He<
 [![Huawei Ascend Atlas A2](https://img.shields.io/badge/Runs%20on-Huawei%20Ascend%20Atlas%20A2-f5a524?style=flat-square)](#serving)
 
 [![Papers with Code: #3 on SimplerEnv WidowX](https://paperswithcode.co/api/v1/papers/2610.41216/leaderboard-badge.svg?eval=46542&live=1)](https://paperswithcode.co/api/v1/papers/2610.41216/leaderboard-badge-link?eval=46542)
-[![Papers with Code: #4 on LIBERO-Pro](https://paperswithcode.co/api/v1/papers/2610.41216/leaderboard-badge.svg?eval=46540&live=1)](https://paperswithcode.co/api/v1/papers/2610.41216/leaderboard-badge-link?eval=46540)
 
 </div>
 
