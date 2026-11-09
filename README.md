@@ -87,7 +87,7 @@ episode with `done` and the simulator's success predicate holds); zero-shot benc
 <tbody>
 <tr><td colspan="8"><sub><i>Strongest competitor run per training benchmark (same episodes, their official harnesses, run by us)</i></sub></td></tr>
 <tr><td>Guava-4B</td><td align="center">–</td><td align="center">84.4</td><td align="center">–</td><td align="center">–</td><td align="center">–</td><td align="center">–</td><td align="center">–</td></tr>
-<tr><td>PyRUA-Lean + Qwen3.8-Flash-Next</td><td align="center">18.2</td><td align="center">–</td><td align="center">53.0</td><td align="center">–</td><td align="center">–</td><td align="center">–</td><td align="center">–</td></tr>
+<tr><td>PyRUA-Lean-4B</td><td align="center">46.0<sup>f</sup></td><td align="center">–</td><td align="center">60.0<sup>f</sup></td><td align="center">–</td><td align="center">–</td><td align="center">–</td><td align="center">–</td></tr>
 <tr><td>SenseNova-RoboRSI-27B<sup>d</sup></td><td align="center">–</td><td align="center">–</td><td align="center">70.3</td><td align="center">–</td><td align="center">–</td><td align="center">–</td><td align="center">–</td></tr>
 <tr><td colspan="8"><sub><i>Ours (same harness H*, strict protocol)</i></sub></td></tr>
 <tr><td>Qwen3.5-4B, untrained</td><td align="center">41.2<sup>†</sup></td><td align="center">75.1</td><td align="center">36.3<sup>†</sup></td><td align="center">56.6</td><td align="center">86.5</td><td align="center">27.6</td><td align="center">21.9</td></tr>
@@ -99,7 +99,7 @@ episode with `done` and the simulator's success predicate holds); zero-shot benc
 </tbody>
 </table>
 
-<sub><sup>d</sup> Stop on success. <sup>†</sup> &gt;5% unknown outcomes, counted as failures. –: unavailable.</sub>
+<sub><sup>d</sup> Stop on success. <sup>f</sup> Official code and settings (per-step success flag, 90-minute budget) on our episodes. <sup>†</sup> &gt;5% unknown outcomes, counted as failures. –: unavailable.</sub>
 
 <details>
 <summary><b>Full table: published results, competitor runs and evaluation conditions</b></summary>
@@ -117,16 +117,15 @@ Conditions: **O** open, **C** no closed LLM, **S** no success signal, **I** no I
 | GPT-6 Astra, zero-shot | ✗ | ✗ | ✗ | ✓ | ✓ | 53.2 | – | – | – | – | – | – |
 | GPT-5.4, Guava harness | ✗ | ✗ | ✓ | ✓ | ✓ | – | 90.4 | – | – | – | – | – |
 | MotorMind, GPT-6 Sol | ✗ | ✗ | ✗ | ✓ | ✓ | – | – | 83.3<sup>a</sup> | – | – | – | – |
-| World Action Agent, Gemini 3.7 Flash | ✗ | ✗ | ✗ | ✓ | ✗ | – | – | 75.6<sup>f</sup> | – | – | – | – |
-| World Action Agent, Qwen3.5-9B student | ✗ | ✗ | ✗ | ✓ | ✗ | – | – | 43.3<sup>f</sup> | – | – | – | – |
+| World Action Agent, Gemini 3.7 Flash | ✗ | ✗ | ✗ | ✓ | ✗ | – | – | 75.6<sup>e</sup> | – | – | – | – |
+| World Action Agent, Qwen3.5-9B student | ✗ | ✗ | ✗ | ✓ | ✗ | – | – | 43.3<sup>e</sup> | – | – | – | – |
 | SoFar, GPT-4o | ✗ | ✗ | ✓ | ✓ | ✓ | – | – | – | 74.9 | 58.3 | – | – |
 | π<sub>0</sub>-FAST, fine-tuned | ✓ | ✓ | ✓ | ✓ | ✗ | – | – | – | 61.9 | 32.1 | 43.1 | – |
 | GPT-4o, EmbodiedBench<sup>b</sup> | ✗ | ✗ | ✓ | ✗ | ✓ | – | – | – | – | – | – | 28.9 |
 | <sub>*Same episodes, competitors' official harnesses, run by us*</sub> | | | | | | | | | | | | |
-| PyRUA-Lean-4B | ✓ | ✓ | ✓ | ✓ | ✗ | 12.8 | – | 17.7<sup>e</sup> | – | – | – | – |
+| PyRUA-Lean-4B | ✓ | ✓ | ✗ | ✓ | ✗ | 46.0<sup>f</sup> | – | 60.0<sup>f</sup> | – | – | – | – |
 | Guava-4B | ✓ | ✓ | ✓ | ✓ | ✓ | – | 84.4 | – | – | – | – | – |
 | MotorMind + Qwen3.8-Flash-Next<sup>c</sup> | ✓ | ✓ | ✗ | ✓ | ✓ | – | – | 57.3 | – | – | – | – |
-| PyRUA-Lean + Qwen3.8-Flash-Next | ✓ | ✓ | ✓ | ✓ | ✗ | 18.2 | – | 53.0 | – | – | – | – |
 | Guava harness + Qwen3.8-Flash-Next | ✓ | ✓ | ✓ | ✓ | ✓ | – | 78.9 | – | – | – | – | – |
 | SenseNova-RoboRSI-27B<sup>d</sup> | ✓ | ✓ | ✗ | ✓ | ✓ | – | – | 70.3 | – | – | – | – |
 | <sub>*Ours (same harness H\*, strict protocol)*</sub> | | | | | | | | | | | | |
@@ -138,9 +137,9 @@ Conditions: **O** open, **C** no closed LLM, **S** no success signal, **I** no I
 | **TinyAstral-4B** | ✓ | ✓ | ✓ | ✓ | ✓ | **62.8** | **93.6** | **78.3** | **66.6** | **88.5** | **41.2** | **27.6** |
 
 <sub><sup>a</sup> Original LIBERO suites, single seed. <sup>b</sup> Ground-truth coordinates, boxes, and in-context
-examples. <sup>c,d</sup> Stop on success. <sup>e</sup> Final-state success only, without requiring a successful finish
-declaration. <sup>f</sup> Position and task perturbations only (360 episodes), simulator point clouds; the student is
-trained on rollouts of the same tasks and tested on unseen seeds. <sup>†</sup> &gt;5% unknown outcomes, counted as
+examples. <sup>c,d</sup> Stop on success. <sup>e</sup> Position and task perturbations only (360 episodes), simulator point clouds; the student is
+trained on rollouts of the same tasks and tested on unseen seeds. <sup>f</sup> Official code and settings (per-step
+success flag, 90-minute budget) on our episodes. <sup>†</sup> &gt;5% unknown outcomes, counted as
 failures.</sub>
 
 </details>
